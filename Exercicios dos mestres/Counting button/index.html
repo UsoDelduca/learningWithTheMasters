@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Botaum Contador</title>
+ </head>
+
+
+	<body>
+		<!-- contando pelo id do botão
+		<p> Contagem: </p>
+
+		<button id="contador" onclick="contaButton()"> 0 </button>
+		<script>
+			function contaButton() {
+				let numero = this.document.getElementById("contador");
+				
+				console.log('alguem me clicou');
+				numero.innerText++;
+
+			}
+		</script> -->
+		<!-- 
+		contando pelo TagName do botão
+
+		<p> Contagem: </p>
+
+		<button onclick="contaButton()"> 0 </button>
+		<script>
+			function contaButton() {
+				let numero = this.document.getElementsByTagName("button");
+				let clique = numero[0];
+				console.log('alguem me clicou');
+				
+				clique.innerText++;	
+					}
+				
+		</script> -->
+
+		<!-- using this as a parameter ainda não deu certo-->
+
+		<!-- <p> Contagem: </p>
+
+		<button type ='button' onclick='contaButton(this)'> 0 </button>
+			<script>
+				function contaButton(cntBtn) {
+					let thisbtn = cntBtn;
+					console.log('alguem me clicou');
+					thisbtn.innerText++;
+				}
+			</script> -->
+
+			<!-- using query selector and event handler -->
+
+			<p> Contagem: </p>
+
+		<button type ='button' id='clique'> 0 </button>
+		<button type ='button' id='cliquemais'> 1 </button>
+			<script>
+				function buttonOnClickHandler(event){
+
+					let currentButton = event.currentTarget;
+					let currentId = currentButton.id;
+					let currentText = currentButton;
+					console.log('Alguem clicou o botaum chamado (' + currentId +') ');
+					currentButton.innerText++;
+				}
+
+				let clique = this.document.querySelector('#clique');
+				clique.addEventListener('click', buttonOnClickHandler);
+
+				let cliquemais = this.document.querySelector('#cliquemais');
+				cliquemais.addEventListener('click', buttonOnClickHandler);
+			</script>
+
+	</body>

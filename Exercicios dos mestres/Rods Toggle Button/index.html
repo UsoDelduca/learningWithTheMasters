@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ele é o quê?!</title>
+ 
+<style>
+#que {
+  cursor:  pointer;
+}
+#que:hover {
+  background-color: white;
+  color:  black;
+  border: 2px solid black;
+}
+
+
+</style>
+
+<script>
+       function rodafunction(button){
+        // let novoTexto = this.document.getElementById('que');
+        // novoTexto.innerText = 'Triquinho';
+        if(document.getElementById('que').innerText=="Elé o quê?")
+        {
+          document.getElementById('que').innerText="Triquinho";
+        }
+        else
+        {
+          document.getElementById("que").innerText="Elé o quê?";
+        }
+
+        console.log('huihuihuihui');
+
+       }
+
+     </script>
+ </head>
+
+
+	<body>
+
+    <p>
+      Clique no botão, purfas
+      
+    </p>
+      <button type='button' id='que' onclick="rodafunction(this)">Elé o quê?</button>
+     
+
+  </body>
