@@ -1,0 +1,47 @@
+
+/*button itself*/
+
+.dropBtn { 
+	background-color: #3333ff;
+	border: 1.5px solid black;
+	border-radius: 3px;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	cursor: pointer;
+	text-shadow: 1px 1px 3px dimgrey;
+}
+
+/*hidden button content*/
+
+.dropdown-content { 
+	display: none;
+	position:  absolute;
+	background-color: #b3b3ff;
+	min-width: 140px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown {
+	position:  relative;
+	display:  inline-block;
+}
+
+/*content list inside dropdown */
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	min-width: 140px;
+	font-family: sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #ccccff}
+
+.show {
+	display: block;
+}
