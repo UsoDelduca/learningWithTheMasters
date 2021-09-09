@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Welcome to our page</title>
+    
+    <style>
+
+      #Key{
+        display: none;
+      }
+
+      #logIn{
+        display: none;
+      }
+
+    </style>
+  </head>
+
+<body>
+  <p id= "greeting">
+    Please, type your user name:
+  </p>
+
+  <input type="text" id="Login">
+  <button onclick="greetUser()">Submit</button>
+
+  <p id="toGreet"></p>
+
+  <p id="Password"></p>
+
+  <input type="text" id="Key"><br>
+  <button id= "logIn" onclick="checkKey()">Log in</button>
+
+  <script>
+    function greetUser(){
+      if("null"){
+        alert("You MUST enter a valid name!")
+      } else {
+      let userName = document.getElementById("Login").value;
+      document.getElementById("toGreet").innerText = "Welcome, " + userName;
+      document.getElementById("Password").innerText = "Type your password";
+      document.getElementById("Key").style.display = 'block'; 
+      document.getElementById("logIn").style.display = 'inline';
+      }
+
+    }
+
+
+
+  </script>
+
+
+
+
+
+
+</body>
